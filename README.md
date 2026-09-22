@@ -22,6 +22,18 @@ The ZIP contains 584 files (about 227 MB uncompressed) under `CILS_research_mate
 
 The primary suite covers 831 public EEM records, 16 target tasks, five outer folds and three inner folds. MEE-C and MEE-S use different temperature-selection objectives for the same probability-allocation mechanism.
 
+## Reproduce from the archived release
+
+Start with the [versioned release](https://github.com/WYH302/MEE-CILS-research-materials/releases/tag/v1.0.0), rather than expecting the Git checkout to contain `src/`. Verify the SHA-256 above before extracting. Read `CILS_research_materials/README.md` and `requirements-reproduction.txt` inside the archive; retain the archived configurations and predefined splits.
+
+The archived source layout is appropriate for a future readable Git release, but extracting every file into the default branch would also publish generated material and historical paths. Curate the source and preserve the release checksum rather than silently replacing the archive.
+
+## Real-world Robustness & Edge Deployment
+
+The release contains protocol-defined perturbation analyses and observation-level predictions. Interpret those results under the archived perturbation definitions and group-disjoint splits; they are not newly captured field measurements.
+
+For spectral inputs, test relevant intensity changes, measurement noise and missing wavelength regions under a frozen protocol. A photograph-style occlusion test is not automatically meaningful for EEM data. No edge-device latency, peak-memory, power or exported-model parity report is provided in this repository.
+
 ## Original spectral data
 
 Obtain the original datasets from their providers under the applicable terms:
